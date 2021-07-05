@@ -1,0 +1,53 @@
+INSERT INTO calificaciones(idcalificaciones, nota_1, nota_2, nota_recu, nota_final)
+VALUES("1","9","3","10","16"),
+("2","7","9","0","15"),
+("3","7","10","0","15"),
+("4","7","5","10","16"),
+("5","5","9","10","17"),
+("6","7","7","10","17")
+
+INSERT INTO curso(idCurso, cursos, paralelo, id_de_docente_tutor, uvicacion)
+VALUES("1","8vo","A","1","bloque_A"),
+("2","8vo","B","1","bloque_A"),
+("3","9no","A","2","bloque_A"),
+("4","9no","B","2","bloque_A"),
+("5","10mo","A","3","bloque_B"),
+("6","10mo","B","3","bloque_B")
+
+
+INSERT INTO estudiante(idestudiante, cedula_e, nombre, apellidod, generos, fecha_n, direcciond, telefono)
+VALUES("2","131414141-2","carlos","velez","1","2000-06-12","manta","0987878762"),
+("3","131414141-3","jose","cantos","1","2001-02-04","portoviejo","0987878763"),
+("4","131414141-4","juana","santos","2","2000-02-08","montecristi","0987878764"),
+("5","131414141-5","dayana","vera","2","2001-05-15","manta","0987878765"),
+("6","131414141-6","antony","anchundia","1","2000-06-20","manta","0987878766"),
+("7","131414141-7","maria","pin","2","2000-03-23","montecristi","0987878767"),
+("8","131414141-8","carlos","cedeño","1","2000-07-17","manta","0987878768")
+
+INSERT INTO genero(idgenero, generos)
+VALUES("1","masculino"),("2","femenino")
+Inserción de datos en tabla padres
+
+INSERT INTO padres(idPadres, padreCedula, nombresP, apellidosP, dirTrabP, tlfTrabP, activoP, madreCedula, nombresM, apellidosM, dirTrabM, tlfTrabM, activoM, representante)
+VALUES("1","131515151-1","joaquin","vera","manta","0999999991","si","131616161-1", "maria", "reyes","manta", "0988888881","si","madre"),
+	("2","1315151512","pedro","velez","manta","0999999992","si","131616161-2", "ana", "delgado" ,"manta", "0988888882","si","madre"),
+	("3","131515151-3","carlos","catos","manta","0999999993","no","131616161-3", "mariela", "cedeño", "manta", "0988888883","si","madre")
+
+INSERT INTO peridodoacademico(idPeriodo, ano, finicio, fFin, n_estudiantes_matriculados)
+VALUES("1","2015","2015-03-03","2015-12-23","30"),
+("2","2016","2016-03-04","2016-12-22","31"),
+("3","2017","2017-02-25","2017-12-23","30")
+
+INSERT INTO matricula(idmatricula, iddelestudiante, iddeperiodoacademico, iddecurso)
+VALUES("1","1","1","1"),
+("2","2","2","2"),
+("3","3","2","1"),
+("4","4","3","3"),
+("5","5","3","4"),
+("6","6","1","5")
+
+INSERT INTO docente(iddocente, cedulad, nombred, apellidod, direcciond, telefonod)
+VALUES("1","131313131-1","luis","vera","manta","0989898981"),
+("2","131313131-2","marcos","delgado","portoviejo","0989898982"),
+("3","131313131-3","raul","velez","montecristi","0989898983"),
+("4","131313131-4","jose","delgado","manta","0989898984")
